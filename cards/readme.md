@@ -36,3 +36,19 @@ for index, card := range cards{
 - card : Current card we're iterating over
 - range cards : Take the slice of 'cards' and loop over it
 - fmt.Println(card) : Run this one time for each card in the slice
+
+## receiver:
+
+```
+func (d deck) print() {
+  for i, card := range d {
+    fmt.Println(i, card)
+  }
+}
+```
+
+Any variable of type "deck" now gets access to the "print" method
+
+- d : The actual copy of the deck we're working with is available in the funciton as a variable called 'd'
+
+- deck : Every variable of type 'deck' can call this function on itself.
