@@ -52,3 +52,13 @@ Any variable of type "deck" now gets access to the "print" method
 - d : The actual copy of the deck we're working with is available in the funciton as a variable called 'd'
 
 - deck : Every variable of type 'deck' can call this function on itself.
+
+## Write and Read File
+
+- func WriteFile(filename string, data []byte, perm os.FileMode) error
+  - data []byte -> 必須將 data 轉為 byte 檔
+  - perm os.FileMode -> 權限 0666 表示所有人都可以讀寫
+
+* func ReadFile(filename string) ([]byte, error)
+  - `byteSlice err := ioutil.ReadFile(filename)`
+  * err -> Value of type 'error'. If nothing went wrong, it will have a value of 'nil'
