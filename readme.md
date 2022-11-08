@@ -1,2 +1,1 @@
-# Course Golang
-### From https://www.udemy.com/course/go-the-complete-developers-guide
+# Course Basic Golang and Web Golang
