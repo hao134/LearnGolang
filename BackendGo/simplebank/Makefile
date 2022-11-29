@@ -15,4 +15,9 @@ migratedown:
 
 sqlc:
 	sqlc generate
-.PHONY: postgres createdb dropdb migrateup migratedown sqlc
+
+test:
+	go test -v -cover ./...
+# -v verbose -cover -> measure code coverage ./... to run unit tests in all of them
+
+.PHONY: postgres createdb dropdb migrateup migratedown sqlc test
