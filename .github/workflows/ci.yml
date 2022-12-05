@@ -1,4 +1,4 @@
-name: ci-test
+name: simpleBank-ci-test
 
 on:
   push:
@@ -45,7 +45,11 @@ jobs:
           which migrate
 
       - name: Run migrations
-        run: make migrateup
+        run: |
+          cd Backend/simplebank
+          make migrateup
 
       - name: Test
-        run: make test
+        run: |
+          cd Backend/simplebank
+          make test
