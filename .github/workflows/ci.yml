@@ -47,10 +47,10 @@ jobs:
       - name: Run migrations
         run: |
           ls -l
-          cd ./Backend/simplebank
+          cd ./BackendGo/simplebank
           make migrateup
 
       - name: Test
         run: |
-          cd ./Backend/simplebank
+          cd ./BackendGo/simplebank
           make test
