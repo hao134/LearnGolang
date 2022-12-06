@@ -23,4 +23,7 @@ test:
 	go test -v -cover ./...
 # -v verbose -cover -> measure code coverage ./... to run unit tests in all of them
 
-.PHONY: postgres startdocker createdb dropdb migrateup migratedown sqlc test
+server:
+	go run main.go
+
+.PHONY: postgres startdocker createdb dropdb migrateup migratedown sqlc test server
