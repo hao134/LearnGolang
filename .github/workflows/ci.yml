@@ -3,9 +3,9 @@ name: simpleBank-ci-test
 # change main to master to switch the ci on
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
   test:
