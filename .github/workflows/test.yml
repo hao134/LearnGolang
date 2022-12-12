@@ -41,12 +41,7 @@ jobs:
           sudo mv migrate.linux-amd64 /usr/bin/migrate
           which migrate
       - name: Run migrations
-        run: |
-          ls -l
-          cd ./BackendGo/simplebank_v2
-          make migrateup
+        run: make migrateup
 
       - name: Test
-        run: |
-          cd ./BackendGo/simplebank_v2
-          make test
+        run: make test
