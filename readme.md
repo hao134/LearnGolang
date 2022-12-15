@@ -1,5 +1,7 @@
 # Simple Bank
 
+##### source: https://www.udemy.com/course/backend-master-class-golang-postgresql-kubernetes/
+
 Due to unknown error, i start version 2 from (after dockerfile created at course 25) : https://github.com/techschool/simplebank/tree/fc041eb8f380482600f872cd6bd52fc19b7da4f2
 
 # Working with database (Postgres + SQLC)
